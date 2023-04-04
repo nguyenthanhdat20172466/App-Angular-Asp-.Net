@@ -26,7 +26,8 @@ export class DsMAnComponent implements OnInit {
   AddThucDon(){
     this.mAn={
       MaMonAn: 0,
-      TenThucDon: ""
+      TenThucDon: "",
+      AnhMonAn: ""
     }
     this.loadingEdit=true;
     this.title = "Thêm món"

@@ -36,11 +36,13 @@ export class ThemSuaMAnComponent implements OnInit{
     })
     this.tenMonAn = this.mAn.TenMonAn;
     this.maMonAn = this.mAn.MaMonAn;
+    this.thucDon = this.mAn.TenThucDon;
     this.mAn.AnhMonAn==""? this.anhMonAn = "com.jpg":this.anhMonAn = this.mAn.AnhMonAn;
     this.pathImage = this.service.PhotoUrl + "/" + this.anhMonAn;
   }
 
   AddThucDon(){
+
     const currentDate = new Date();
     const dateString = format(currentDate, 'yyyy-MM-dd HH:mm:ss');
     this.selectedValue = this.myOptionSet.value;
